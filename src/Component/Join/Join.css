@@ -1,0 +1,75 @@
+.joinleft {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem !important;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.line {
+    width: 10rem;
+    height: 3px;
+    border-radius: 4rem;
+    border: 2px solid var(--orange);
+}
+
+.joinspan {
+    color: white;
+}
+
+.joinright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email {
+    background-color: var(--caloryCard);
+    padding: 1rem;
+}
+
+.email input {
+    padding: 10px;
+    background-color: initial;
+    color:white;
+    border: none;
+    outline: none;
+}
+
+.email button {
+    margin:0 10px ;
+    background-color: var(--orange) !important;
+    color: white !important;
+}
+
+@media only screen and (max-width:992px) {
+    .joinleft{
+        text-align: center;
+        padding-left: 0 !important;
+    }
+
+    .line {
+        display: inline-block;
+        margin: 1rem auto;
+    }
+
+    .joinright {
+        margin-top: 1rem !important;
+    }
+
+    .email{
+        width: 96% !important;
+    }
+
+    .email input {
+        display: block;
+        width: 90%;
+        margin: 0 auto;        
+    }
+
+    .email button {
+        display: block;
+        margin: 1rem auto 0;
+    }
+}

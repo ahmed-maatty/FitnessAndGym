@@ -1,0 +1,40 @@
+.row>* {
+    padding: 0 !important;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar>.container {
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    width: 45%;
+}
+
+.navbar-collapse{
+    width: 55%;
+}
+
+.nav-link {
+    padding: 5px 15px !important;
+    margin-left: 15px !important;
+    color: #fff !important;
+    transition: all 0.3s linear !important;
+}
+
+.nav-link:hover {
+    color: var(--orange) !important;
+}
+
+.logo {
+    width: 190px;
+}
+
+@media only screen and (max-width : 992px) {
+    .logo {
+        width: 185px;
+    }
+}

@@ -1,0 +1,129 @@
+.Testleft {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: capitalize;
+}
+
+.Testleft span:nth-of-type(1) {
+    color: var(--orange);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.Testleft span:nth-of-type(2),.Testleft span:nth-of-type(3){
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Testleft span:nth-of-type(3){
+    color: white;
+}
+
+.Testleft span:nth-of-type(4){
+    color: white;
+    padding: 0 1rem;
+    font-size: 18px;
+    line-height: 2.3;
+    letter-spacing: 1px;
+}
+
+.name {
+    color: var(--orange) !important;
+    font-size: 20px !important;
+    padding-left: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.status {
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: 200 !important;
+}
+
+.Testright {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Testright div:nth-of-type(1) {
+    width: 17rem;
+    height: 20rem;
+    border: solid 2px orange;
+    position: absolute;
+    right: 11rem;
+    top: 0.9rem;
+}
+
+.Testright div:nth-of-type(2){
+    width: 17rem;
+    height: 20rem;
+    background: var(--planCard);
+    position: absolute;
+    right: 7.5rem;
+    top: 3.5rem;
+}
+
+.person{
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    right: 9rem;
+    top: 2rem;
+}
+
+.arrows {
+    position: absolute;
+    bottom: 0;
+}
+
+.arrows img {
+    width: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s linear;
+}
+
+.arrows img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:992px){
+
+    .Testleft span:nth-of-type(2),
+    .Testleft span:nth-of-type(3){
+        font-size: 45px;
+    }
+
+    .Testleft span:nth-of-type(4){
+        font-size: 17px;
+        line-height: 1.8;
+        padding: 0;
+    }
+
+    .name {
+        font-size: 16px !important;
+        padding: 0 !important;
+    }
+
+    .Testright div:nth-of-type(1),
+    .Testright div:nth-of-type(2){
+        display: none;
+    }
+
+    .person {
+        position: inherit;
+        right: 0;
+        top: 0;
+        margin: 1rem auto;
+    }
+
+    .arrows {
+        position: inherit;
+        margin: 10px auto;
+    }
+}
+

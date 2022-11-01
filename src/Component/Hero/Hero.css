@@ -1,0 +1,254 @@
+.hero-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+
+
+.Ads {
+    background-color: #363d42;
+    padding: 20px 13px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    width: fit-content;
+    border-radius: 4rem;
+    margin-left: 2.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Ads span {
+    z-index: 2;
+}
+
+.Ads div {
+    position: absolute;
+    height: 80%;
+    width: 5rem;
+    border-radius: 3rem;
+    padding: 16px 9px;
+    background-color: var(--orange);
+    left: 8px;
+    z-index: 1;
+}
+
+/*hero-text*/
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+.lastherotext{
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+/*fihures*/
+
+.figures {
+    display: flex;
+    color: #fff;
+}
+
+.figures div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15px;
+}  
+
+.figures div span:nth-of-type(1){
+    font-size: 1.8rem;
+}
+
+.figures div span:nth-of-type(2) {
+    color: var(--gray);
+}
+
+/*heroBtn*/
+
+.heroBtn {
+    display: flex;
+    gap: 1.5rem;
+    display: flex;
+}
+
+.heroBtn button:nth-of-type(1){
+    color: #fff !important;
+    background-color: var(--orange) !important;
+    transition: all 0.3s linear;
+}
+
+.heroBtn button:nth-of-type(1):hover{
+    background-color: transparent !important;
+    border-color: var(--orange) !important;
+}
+
+.heroBtn button:nth-of-type(2){
+    color: #fff !important;
+    background-color: transparent !important;
+    border-color: var(--orange) !important;
+    transition: all 0.3s linear;
+}
+
+.heroBtn button:nth-of-type(2):hover{
+    background-color: var(--orange) !important;
+    border-color: transparent !important;
+}
+
+/*rightSide*/
+
+.Right{
+    background-color: var(--orange);
+    position: relative;
+    min-height: 100vh;
+    z-index: 5;
+}
+
+.Right > .btn {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+.HeartRate {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: var(--darkGray);
+    color: #fff;
+    position: absolute;
+    top: 7rem;
+    right: 5rem;
+}
+
+.HeartRate img {
+    width: 40px;
+}
+
+.HeartRate span:nth-of-type(1){
+    color: var(--gray) !important;
+}
+
+.HeartRate span:nth-of-type(2){
+    font-size: 1.5rem;
+}
+
+.HeroImage {
+    width: 23rem;
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    z-index: 5;
+}
+
+.heroback {
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+/*calories*/
+
+.calories {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    width: fit-content;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #fff;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+
+.calories img {
+    width: 55px;
+}
+
+.calories div {
+    display: flex;
+    flex-direction: column;
+}
+
+.calories div span:nth-last-of-type(2) {
+    color: var(--gray);
+}
+
+.calories div span:nth-last-of-type(1) {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width : 992px){
+    .Ads {
+        margin-left: 1.5rem;
+        padding: 18px 11px;
+    }
+
+    .hero-text {
+        gap: 1rem;
+        font-size: 3rem;
+    }
+
+    .figures {
+        margin-left: 1rem;
+    }
+
+    .Right {
+        margin: 2rem 0 !important;
+        background-color: var(--appColor);
+        background-image: url(../../assets/Background.png);
+    }
+
+    .HeroImage {
+        width: 16rem;
+        top: 11rem;
+        right: 4rem;
+    }
+
+    .heroback {
+        top: 10rem;
+        right: 8rem;
+    }
+
+    .HeartRate {
+        top: 2rem;
+        right: 15rem;
+    }
+
+    .calories{
+        top: 39rem;
+        right: 8rem;
+    }
+
+    .calories div {
+        flex-direction: row;
+    }
+
+    .calories div span:nth-last-of-type(2){
+        margin: 0 1rem ;
+    }
+
+    .hero-blur {
+        width: 19rem;
+    }
+}

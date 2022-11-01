@@ -1,0 +1,83 @@
+.program {
+    text-align: start;
+}
+
+.Header-programs {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.program .Boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem !important;
+    background-color: gray;
+    width: 23%;
+    min-width: 20%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin: 15px 0;
+}
+
+.box:hover {
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+
+.box:hover svg path{
+    color: #fff ;
+}
+
+.box svg {
+    font-size: 35px;
+    width: fit-content;    
+}
+
+.box span {
+    font-size: 14px !important;
+}
+
+.box div {
+    display: flex;
+    font: 13px;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+
+.box div img {
+    width: 15px !important;
+}
+
+
+
+@media only screen and (max-width : 992px){
+    .Header-programs{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .program .Boxes {
+        flex-direction: column ;
+        align-items: center;  
+        margin: 4rem 0;
+    }
+
+    .box {
+        width: 96% ;
+    }
+}

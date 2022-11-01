@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --lightgray : #d9d9d9 ;
+    --gray : #9c9c9c ;
+    --orange : #f48915 ;
+    --darkGray : #464d53 ;
+    --caloryCard : #656565 ;
+    --planCard : -webkit-linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%) ;
+    --appColor: #3c3f45 ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: var(--appColor) !important;
+    background-image: url(./assets/Background.png);
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+section {
+    overflow: hidden;
+    padding: 3rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+span{
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stroke-text {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color:#fff;
+}
+
+.hero-text,.figures,.heroBtn{
+    margin-left: 2.3rem;
+    margin-top: 1.8rem;
+}
+
+.btn {
+    background-color: #fff !important;
+    padding: 0.5rem !important;
+    border: 4px solid transparent !important;
+    font-weight: bold !important;
+    transition: all 0.3s !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.blur {
+    background: rgba(253 , 120 , 43 , 0.69);
+    border-radius: 50%;
+    z-index: -9;
+    position: absolute;
+    filter: blur(150px);
+}
+
+.app {
+    overflow: hidden;
 }
